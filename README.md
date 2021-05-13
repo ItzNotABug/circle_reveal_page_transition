@@ -1,16 +1,11 @@
-# transition_animations
+# CircularReveal Transition Animation
 
-A new Flutter project.
+An example showcasing the circular reveal transition from one screen to another.
 
-## Getting Started
+## Implementation
+Look at the custom implementation of `PageRouteBuilder` in the [`first_page.dart`](https://github.com/ItzNotABug/circle_reveal_page_transition/blob/master/lib/screens/first_page.dart),\
+copy the contents of `circle_reveal_clipper.dart` & `extensions.dart` from the [`utils`](https://github.com/ItzNotABug/circle_reveal_page_transition/tree/master/lib/utils) package.
 
-This project is a starting point for a Flutter application.
+Example Gif:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/ItzNotABug/circle_reveal_page_transition/blob/master/cr_transition.gif" width="20%" height="20%" />
