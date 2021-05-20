@@ -1,13 +1,16 @@
-import 'package:flutter/material.dart';
 import 'package:circular_reveal_transition/utils/circle_reveal_clipper.dart';
+import 'package:flutter/material.dart';
 
 import 'utils/extensions.dart';
 
 class CircularRevealRoute {
-  static Route getRoute({GlobalKey globalKey, Widget destination}) {
+  static Route getRoute(
+      {@required GlobalKey globalKey,
+      @required Widget destination,
+      Duration duration = const Duration(milliseconds: 250)}) {
     return PageRouteBuilder(
-      transitionDuration: Duration(milliseconds: 250),
-      reverseTransitionDuration: Duration(milliseconds: 250),
+      transitionDuration: duration,
+      reverseTransitionDuration: duration,
       opaque: false,
       barrierDismissible: false,
       pageBuilder: (context, animation, secondaryAnimation) => destination,
